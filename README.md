@@ -89,30 +89,30 @@ http://localhost:3000
 
 ## Docker Build, Tag, Push
 
-Replace `murughan1985` with your Docker Hub username.
+Replace `d0ksh05` with your Docker Hub username.
 
 ### Frontend
 ```bash
-docker build -t murughan1985/novacart-frontend:v1 ./frontend
-docker tag murughan1985/novacart-frontend:v1 murughan1985/novacart-frontend:latest
-docker push murughan1985/novacart-frontend:v1
-docker push murughan1985/novacart-frontend:latest
+docker build -t d0ksh05/novacart-frontend:v1 ./frontend
+docker tag d0ksh05/novacart-frontend:v1 d0ksh05/novacart-frontend:latest
+docker push d0ksh05/novacart-frontend:v1
+docker push d0ksh05/novacart-frontend:latest
 ```
 
 ### Product Service
 ```bash
-docker build -t murughan1985/novacart-product-service:v1 ./product-service
-docker tag murughan1985/novacart-product-service:v1 murughan1985/novacart-product-service:latest
-docker push murughan1985/novacart-product-service:v1
-docker push murughan1985/novacart-product-service:latest
+docker build -t d0ksh05/novacart-product-service:v1 ./product-service
+docker tag d0ksh05/novacart-product-service:v1 d0ksh05/novacart-product-service:latest
+docker push d0ksh05/novacart-product-service:v1
+docker push d0ksh05/novacart-product-service:latest
 ```
 
 ### Cart Service
 ```bash
-docker build -t murughan1985/novacart-cart-service:v1 ./cart-service
-docker tag murughan1985/novacart-cart-service:v1 murughan1985/novacart-cart-service:latest
-docker push murughan1985/novacart-cart-service:v1
-docker push murughan1985/novacart-cart-service:latest
+docker build -t d0ksh05/novacart-cart-service:v1 ./cart-service
+docker tag d0ksh05/novacart-cart-service:v1 d0ksh05/novacart-cart-service:latest
+docker push d0ksh05/novacart-cart-service:v1
+docker push d0ksh05/novacart-cart-service:latest
 ```
 
 ## GitHub Actions CI/CD
@@ -137,7 +137,7 @@ Required repository secrets:
 
 ## Kubernetes Deployment (Kind)
 
-Before applying manifests, update image names in `k8s/*.yaml` from `murughan1985/...` to your Docker Hub username.
+Before applying manifests, update image names in `k8s/*.yaml` from `d0ksh05/...` to your Docker Hub username.
 
 ### Create Kind cluster
 ```bash
